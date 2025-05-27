@@ -1,0 +1,56 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', monospace;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 2rem;
+}
+
+header {
+  border: 2px solid black;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.banner {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-buttons button {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+
+main {
+  border: 2px solid black;
+  padding: 5rem;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 2rem;
+}
