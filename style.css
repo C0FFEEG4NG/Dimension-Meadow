@@ -6,23 +6,26 @@
 
 body {
   font-family: 'Press Start 2P', monospace;
-  background-color: #000000; /* solid black */
-  color: #ffffff; /* bright white text */
+  background-color: #0e0e0e; /* almost black */
+  color: #555555; /* subtle dark gray text */
   text-align: center;
   padding: 2rem;
 }
 
 header {
-  border: 2px solid #ffffff;
+  border: 2px solid #222222; /* very dark border */
   padding: 1rem;
   margin-bottom: 2rem;
+  background-color: #121212;
 }
 
 .banner {
   font-size: 1rem;
   margin-bottom: 1rem;
-  border: 1px solid #ffffff;
+  border: 1px solid #333333;
   padding: 1rem;
+  color: #777777;
+  background-color: #1a1a1a;
 }
 
 .nav-links {
@@ -34,30 +37,33 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #ffffff;
+  color: #999999;
   padding: 1rem 1.5rem;
-  border: 2px solid #ffffff;
+  border: 2px solid #333333;
+  background-color: #181818;
   display: inline-block;
   font-size: 1rem;
   font-family: inherit;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border 0.2s ease;
 }
 
 .nav-links a:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #2a2a2a;
+  color: #eeeeee;
+  border-color: #555555;
 }
 
 main {
-  border: 2px solid #ffffff;
+  border: 2px solid #222222;
   padding: 5rem;
   min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #121212;
 }
 
 main h1 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #888888;
 }
