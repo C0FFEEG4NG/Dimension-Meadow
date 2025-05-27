@@ -6,14 +6,14 @@
 
 body {
   font-family: 'Press Start 2P', monospace;
-  background-color: #0a0a0a; /* deep black */
-  color: #f0f0f0; /* off-white for less eye strain */
+  background-color: #000000; /* solid black */
+  color: #ffffff; /* bright white text */
   text-align: center;
   padding: 2rem;
 }
 
 header {
-  border: 2px solid #f0f0f0;
+  border: 2px solid #ffffff;
   padding: 1rem;
   margin-bottom: 2rem;
 }
@@ -21,9 +21,8 @@ header {
 .banner {
   font-size: 1rem;
   margin-bottom: 1rem;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #ffffff;
   padding: 1rem;
-  color: #f0f0f0;
 }
 
 .nav-links {
@@ -35,9 +34,9 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #f0f0f0;
+  color: #ffffff;
   padding: 1rem 1.5rem;
-  border: 2px solid #f0f0f0;
+  border: 2px solid #ffffff;
   display: inline-block;
   font-size: 1rem;
   font-family: inherit;
@@ -45,12 +44,12 @@ header {
 }
 
 .nav-links a:hover {
-  background-color: #f0f0f0;
-  color: #0a0a0a;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 main {
-  border: 2px solid #f0f0f0;
+  border: 2px solid #ffffff;
   padding: 5rem;
   min-height: 300px;
   display: flex;
@@ -60,5 +59,5 @@ main {
 
 main h1 {
   font-size: 2rem;
-  color: #f0f0f0;
+  color: #ffffff;
 }
