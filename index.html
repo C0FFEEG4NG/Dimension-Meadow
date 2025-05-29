@@ -22,6 +22,7 @@
       align-items: center;
       padding: 1rem;
       transition: background 0.3s, color 0.3s;
+      position: relative;
     }
 
     .banner {
@@ -59,7 +60,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2rem;
+      font-size: 1.2rem;
+      text-align: center;
     }
 
     .dark {
@@ -83,20 +85,48 @@
     .dark .banner {
       border-color: white;
     }
+
+    /* Dark Mode Button (moved) */
+    .dark-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid black;
+      background: none;
+      cursor: pointer;
+      font-size: 0.6rem;
+    }
+
+    .dark .dark-toggle {
+      color: white;
+      border-color: white;
+    }
+
+    .dark .dark-toggle:hover {
+      background: #333;
+    }
+
+    .dark-toggle:hover {
+      background: #ddd;
+    }
   </style>
 </head>
 <body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">DARK MODE</button>
+
   <div class="banner">1200 x 400 Banner or logo</div>
 
-  <div class="nav">
-    <button onclick="alert('Credits clicked!')">CREDITS</button>
-    <button onclick="alert('Music clicked!')">MUSIC</button>
-    <button onclick="window.open('https://discord.gg/ujd5rJxtw9')">DICORD</button>
-    <button onclick="window.open('https://yourgame.link', '_blank')">CHECK THE GAME OUT</button>
-  </div>
+<div class="nav">
+  <button onclick="alert('Credits clicked!')">CREDITS</button>
+  <button onclick="alert('Music clicked!')">MUSIC</button>
+  <button onclick="window.open('https://discord.gg/ujd5rJxtw9')">DISCORD</button>
+  <button onclick="window.open('https://yourgame.link', '_blank')">CHECK THE GAME OUT</button>
+  <button onclick="window.location.href = 'Updates.html'">UPDATES</button>
+</div>
 
   <div class="main">
-    <button onclick="toggleDarkMode()">DARK MODE</button>
+    <div>WELCOME TO<br>DIMENSION MEADOW</div>
   </div>
 
   <script>
