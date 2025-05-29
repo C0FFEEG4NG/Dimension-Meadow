@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Not Out Yet</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    body {
+      background-color: white;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .back-btn {
+      padding: 0.75rem 1.5rem;
+      border: 2px solid black;
+      background: none;
+      cursor: pointer;
+      font-size: 0.75rem;
+    }
+
+    .back-btn:hover {
+      background: #ddd;
+    }
+
+    .dark {
+      background-color: black;
+      color: white;
+    }
+
+    .dark .back-btn {
+      color: white;
+      border-color: white;
+    }
+
+    .dark .back-btn:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Game Not Out Yet</h1>
+  <p>Dimension Meadow is still in development. Go to Updates to see our progress</p>
+  <button class="back-btn" onclick="window.location.href='index.html'">← Back to Main Site</button>
+
+  <script>
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDark) document.body.classList.add('dark');
+  </script>
+</body>
+</html>
