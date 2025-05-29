@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Updates - Dimension Meadow</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    body {
+      background-color: white;
+      color: black;
+      padding: 2rem;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .update-list {
+      border: 2px solid black;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .update {
+      margin-bottom: 1.5rem;
+    }
+
+    .update-title {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #7F5AF0;
+    }
+
+    .update-desc {
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
+
+    .back-btn {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid black;
+      background: none;
+      cursor: pointer;
+      font-size: 0.75rem;
+    }
+
+    .back-btn:hover {
+      background: #ddd;
+    }
+
+    .dark {
+      background-color: black;
+      color: white;
+    }
+
+    .dark .update-list {
+      border-color: white;
+    }
+
+    .dark .update-title {
+      color: #C4B5FD;
+    }
+
+    .dark .back-btn {
+      color: white;
+      border-color: white;
+    }
+
+    .dark .back-btn:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Game Updates - Dimension Meadow</h1>
+
+  <div class="update-list">
+    <div class="update">
+      <div class="update-title">First Music</div>
+      <div class="update-desc">
+        We've added 2 songs, they are "Start" and "Group Attack". (Songs made by Sludge)
+      </div>
+    </div>
+
+    <div class="update">
+      <div class="update-title">Player</div>
+      <div class="update-desc">
+        Ori, the player you play as, they wear red. (Sprites made by Coffee)
+      </div>
+    </div>
+  </div>
+
+  <button class="back-btn" onclick="window.location.href='index.html'">← Back to Main Site</button>
+
+  <script>
+    // Optional: auto-dark mode if your site supports it
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (isDark) document.body.classList.add('dark');
+  </script>
+</body>
+</html>
